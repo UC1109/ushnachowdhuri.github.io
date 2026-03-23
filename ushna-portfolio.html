@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)file:///Users/ushnachowdhuri/Downloads/ushna-portfolio.html#work -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ushna Chowdhuri — Creative Copywriter</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link href="./ushna-portfolio_files/css2" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0e0d0b;
+    --paper: #f4f1eb;
+    --cream: #ede9df;
+    --red: #c8392b;
+    --gold: #b8922a;
+    --muted: #7a7570;
+    --rule: #d4cfc5;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  /* ─── NAV ─── */
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 1.2rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--paper);
+    border-bottom: 1px solid var(--rule);
+    transition: background 0.3s;
+  }
+
+  .nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: var(--ink);
+    text-decoration: none;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--ink); }
+
+  /* ─── HERO ─── */
+  .hero {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 80px;
+  }
+
+  .hero-left {
+    padding: 6rem 4rem 4rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 1px solid var(--rule);
+  }
+
+  .hero-eyebrow {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-name {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3.5rem, 6vw, 6rem);
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.4rem;
+  }
+
+  .hero-name em {
+    font-style: italic;
+    color: var(--red);
+  }
+
+  .hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.2rem, 2vw, 1.8rem);
+    font-weight: 400;
+    font-style: italic;
+    color: var(--muted);
+    margin-bottom: 2.5rem;
+  }
+
+  .hero-bio {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: var(--ink);
+    max-width: 480px;
+    margin-bottom: 3rem;
+  }
+
+  .hero-bio strong {
+    color: var(--red);
+    font-weight: 500;
+  }
+
+  .hero-cta {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary {
+    display: inline-block;
+    padding: 0.9rem 2rem;
+    background: var(--ink);
+    color: var(--paper);
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+
+  .btn-primary:hover { background: var(--red); }
+
+  .btn-secondary {
+    display: inline-block;
+    padding: 0.9rem 2rem;
+    border: 1px solid var(--ink);
+    color: var(--ink);
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .btn-secondary:hover { background: var(--ink); color: var(--paper); }
+
+  .hero-right {
+    padding: 6rem 4rem 4rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--cream);
+  }
+
+  .hero-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .stat-item {}
+
+  .stat-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1;
+    color: var(--red);
+  }
+
+  .stat-label {
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 0.4rem;
+    line-height: 1.4;
+  }
+
+  .hero-credentials {
+    border-top: 1px solid var(--rule);
+    padding-top: 2rem;
+  }
+
+  .credential-row {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .credential-year {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--muted);
+    min-width: 40px;
+  }
+
+  .credential-text {
+    font-size: 0.9rem;
+    color: var(--ink);
+  }
+
+  .credential-text strong { font-weight: 500; }
+
+  /* ─── SECTION HEADERS ─── */
+  .section-header {
+    padding: 5rem 4rem 3rem;
+    border-bottom: 1px solid var(--rule);
+    display: flex;
+    align-items: baseline;
+    gap: 2rem;
+  }
+
+  .section-number {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.15em;
+    color: var(--muted);
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    font-weight: 900;
+    line-height: 1;
+  }
+
+  .section-subtitle {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--muted);
+    margin-left: auto;
+    max-width: 300px;
+    text-align: right;
+    line-height: 1.5;
+  }
+
+  /* ─── FEATURED WORK ─── */
+  .work-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .work-card {
+    border-right: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .work-card:nth-child(even) { border-right: none; }
+
+  .work-card-inner {
+    padding: 3rem;
+    transition: background 0.3s;
+  }
+
+  .work-card:hover .work-card-inner { background: var(--cream); }
+
+  .work-card-tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 1.2rem;
+  }
+
+  .work-card-client {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 3vw, 2.8rem);
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 0.6rem;
+  }
+
+  .work-card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+  }
+
+  .work-card-summary {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: var(--muted);
+    margin-bottom: 2rem;
+    max-width: 420px;
+  }
+
+  .work-card-meta {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .work-meta-item {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .work-meta-item::before {
+    content: '';
+    width: 16px;
+    height: 1px;
+    background: var(--rule);
+    display: inline-block;
+  }
+
+  .work-card-award {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.3rem 0.8rem;
+    background: var(--gold);
+    color: white;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  /* HERO CARD - spans full width */
+  .work-card.hero-card {
+    grid-column: 1 / -1;
+    border-right: none;
+    background: var(--ink);
+    color: var(--paper);
+  }
+
+  .work-card.hero-card .work-card-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    padding: 4rem;
+  }
+
+  .work-card.hero-card:hover .work-card-inner { background: #1a1916; }
+
+  .work-card.hero-card .work-card-tag { color: var(--red); }
+
+  .work-card.hero-card .work-card-client {
+    font-size: clamp(2.5rem, 4.5vw, 5rem);
+    color: var(--paper);
+  }
+
+  .work-card.hero-card .work-card-title { color: #a09990; }
+
+  .work-card.hero-card .work-card-summary { color: #c4bdb5; }
+
+  .work-card.hero-card .work-meta-item { color: #7a7570; }
+
+  .work-card.hero-card .work-meta-item::before { background: #3a3830; }
+
+  .hero-card-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .hero-card-stat {
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    font-weight: 900;
+    color: var(--red);
+    line-height: 1;
+  }
+
+  .hero-card-stat-label {
+    font-size: 0.85rem;
+    color: #7a7570;
+    margin-top: 0.5rem;
+    line-height: 1.5;
+  }
+
+  .hero-card-process {
+    margin-top: 2rem;
+  }
+
+  .process-step {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-top: 1px solid #2a2820;
+  }
+
+  .process-step:last-child { border-bottom: 1px solid #2a2820; }
+
+  .process-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--red);
+    min-width: 70px;
+    padding-top: 0.1rem;
+  }
+
+  .process-text {
+    font-size: 0.88rem;
+    color: #c4bdb5;
+    line-height: 1.6;
+  }
+
+  /* ─── REEL / TV ─── */
+  .reel-section {
+    padding: 5rem 4rem;
+    background: var(--cream);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .reel-intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 3rem;
+  }
+
+  .reel-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1;
+  }
+
+  .reel-note {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: var(--muted);
+    font-size: 0.95rem;
+    max-width: 300px;
+    text-align: right;
+    line-height: 1.6;
+  }
+
+  .reel-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .reel-item {
+    background: var(--ink);
+    aspect-ratio: 16/9;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .reel-item::before {
+    content: '▶';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: rgba(255,255,255,0.3);
+    transition: color 0.2s, transform 0.2s;
+  }
+
+  .reel-item:hover::before {
+    color: white;
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  .reel-client {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: white;
+    position: relative;
+    z-index: 1;
+  }
+
+  .reel-spot {
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.5);
+    font-family: 'DM Mono', monospace;
+    letter-spacing: 0.1em;
+    position: relative;
+    z-index: 1;
+    margin-top: 0.2rem;
+  }
+
+  /* ─── AWARDS / RECOGNITION ─── */
+  .awards-section {
+    padding: 5rem 4rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .awards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    margin-top: 3rem;
+  }
+
+  .award-item {
+    padding: 2.5rem;
+    border-right: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .award-item:nth-child(3n) { border-right: none; }
+
+  .award-medal {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 0.8rem;
+  }
+
+  .award-name {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+  }
+
+  .award-campaign {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin-bottom: 0.4rem;
+  }
+
+  .award-year {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+  }
+
+  /* ─── PURPOSE TRACK ─── */
+  .purpose-section {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 5rem 4rem;
+    border-bottom: 1px solid #2a2820;
+  }
+
+  .purpose-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-bottom: 4rem;
+    padding-bottom: 4rem;
+    border-bottom: 1px solid #2a2820;
+  }
+
+  .purpose-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem, 4vw, 4.5rem);
+    font-weight: 900;
+    line-height: 1.05;
+  }
+
+  .purpose-title em { color: var(--red); font-style: italic; }
+
+  .purpose-intro {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: #c4bdb5;
+    display: flex;
+    align-items: center;
+  }
+
+  .purpose-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .purpose-card {
+    padding: 2.5rem;
+    border: 1px solid #2a2820;
+    transition: border-color 0.2s;
+  }
+
+  .purpose-card:hover { border-color: var(--red); }
+
+  .purpose-card-tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 1rem;
+  }
+
+  .purpose-card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--paper);
+    line-height: 1.1;
+    margin-bottom: 0.8rem;
+  }
+
+  .purpose-card-desc {
+    font-size: 0.88rem;
+    line-height: 1.7;
+    color: #a09990;
+  }
+
+  /* ─── ABOUT ─── */
+  .about-section {
+    padding: 5rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 6rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .about-left {}
+
+  .about-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 1rem;
+  }
+
+  .about-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 3.5vw, 3.5rem);
+    font-weight: 900;
+    line-height: 1.05;
+    margin-bottom: 2rem;
+  }
+
+  .about-heading em { font-style: italic; color: var(--red); }
+
+  .timeline {
+    margin-top: 2rem;
+  }
+
+  .timeline-item {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.2rem 0;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .timeline-year {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.68rem;
+    color: var(--muted);
+    min-width: 70px;
+    padding-top: 0.2rem;
+  }
+
+  .timeline-content {}
+
+  .timeline-role {
+    font-weight: 500;
+    font-size: 0.92rem;
+  }
+
+  .timeline-agency {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 0.88rem;
+    color: var(--muted);
+    margin-top: 0.2rem;
+  }
+
+  .about-right {
+    padding-top: 0.5rem;
+  }
+
+  .about-bio-large {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    color: var(--ink);
+  }
+
+  .about-bio-large em { font-style: italic; color: var(--red); }
+
+  .about-bio {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+  }
+
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 2rem;
+  }
+
+  .skill-tag {
+    padding: 0.35rem 0.9rem;
+    border: 1px solid var(--rule);
+    font-size: 0.75rem;
+    font-family: 'DM Mono', monospace;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+  }
+
+  /* ─── CONTACT ─── */
+  .contact-section {
+    padding: 5rem 4rem;
+    background: var(--cream);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: center;
+  }
+
+  .contact-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem, 4vw, 4.5rem);
+    font-weight: 900;
+    line-height: 1.05;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-heading em { font-style: italic; color: var(--red); }
+
+  .contact-note {
+    font-size: 1rem;
+    color: var(--muted);
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+  }
+
+  .contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .contact-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 0;
+    border-bottom: 1px solid var(--rule);
+    text-decoration: none;
+    color: var(--ink);
+    transition: color 0.2s;
+  }
+
+  .contact-link:hover { color: var(--red); }
+
+  .contact-link-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+  .contact-link-value {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1rem;
+  }
+
+  .contact-arrow { font-size: 1.2rem; }
+
+  /* ─── FOOTER ─── */
+  footer {
+    padding: 2rem 4rem;
+    border-top: 1px solid var(--rule);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-name {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+  }
+
+  .footer-note {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+  }
+
+  /* ─── SCROLL ANIMATIONS ─── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ─── SECTION DIVIDER ─── */
+  .divider {
+    height: 1px;
+    background: var(--rule);
+    margin: 0 4rem;
+  }
+
+  /* ─── MOBILE ─── */
+  @media (max-width: 768px) {
+    nav { padding: 1rem 1.5rem; }
+    .nav-links { display: none; }
+    .hero { grid-template-columns: 1fr; }
+    .hero-left, .hero-right { padding: 3rem 1.5rem; }
+    .hero-right { border-top: 1px solid var(--rule); }
+    .hero-stats { grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+    .section-header { padding: 3rem 1.5rem 2rem; flex-wrap: wrap; }
+    .work-grid { grid-template-columns: 1fr; }
+    .work-card.hero-card .work-card-inner { grid-template-columns: 1fr; gap: 2rem; }
+    .work-card:nth-child(even) { border-right: none; }
+    .work-card { border-right: none; }
+    .work-card-inner { padding: 2rem 1.5rem; }
+    .reel-section { padding: 3rem 1.5rem; }
+    .reel-grid { grid-template-columns: 1fr; }
+    .awards-section { padding: 3rem 1.5rem; }
+    .awards-grid { grid-template-columns: 1fr; }
+    .award-item { border-right: none; }
+    .purpose-section { padding: 3rem 1.5rem; }
+    .purpose-header { grid-template-columns: 1fr; gap: 1.5rem; }
+    .purpose-cards { grid-template-columns: 1fr; }
+    .about-section { grid-template-columns: 1fr; gap: 2rem; padding: 3rem 1.5rem; }
+    .contact-section { grid-template-columns: 1fr; padding: 3rem 1.5rem; }
+    footer { padding: 1.5rem; flex-direction: column; gap: 0.5rem; text-align: center; }
+  }
+</style>
+<style type="text/css" id="operaUserStyle"></style></head>
+<body>
+
+<!-- ─── NAV ─── -->
+<nav style="box-shadow: none;">
+  <a href="file:///Users/ushnachowdhuri/Downloads/ushna-portfolio.html#" class="nav-logo">Ushna Chowdhuri</a>
+  <ul class="nav-links">
+    <li><a href="file:///Users/ushnachowdhuri/Downloads/ushna-portfolio.html#work">Work</a></li>
+    <li><a href="file:///Users/ushnachowdhuri/Downloads/ushna-portfolio.html#reel">Reel</a></li>
+    <li><a href="file:///Users/ushnachowdhuri/Downloads/ushna-portfolio.html#purpose">Purpose</a></li>
+    <li><a href="file:///Users/ushnachowdhuri/Downloads/ushna-portfolio.html#about">About</a></li>
+    <li><a href="file:///Users/ushnachowdhuri/Downloads/ushna-portfolio.html#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ─── HERO ─── -->
+<section class="hero">
+  <div class="hero-left">
+    <p class="hero-eyebrow">Senior Creative Copywriter · London</p>
+    <h1 class="hero-name">Ushna<br><em>Chowdhuri</em></h1>
+    <p class="hero-title">Ideas that move people. Copy that moves markets.</p>
+    <p class="hero-bio">
+      Senior copywriter with 12+ years across Leo Burnett, FCB, Ogilvy and BBH. Trained at <strong>University of the Arts London</strong>. I write for brands that want to mean something — and for causes that already do.
+    </p>
+    <div class="hero-cta">
+      <a href="file:///Users/ushnachowdhuri/Downloads/ushna-portfolio.html#work" class="btn-primary">View Work</a>
+      <a href="file:///Users/ushnachowdhuri/Downloads/ushna-portfolio.html#contact" class="btn-secondary">Get in Touch</a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-number">12+</div>
+        <div class="stat-label">Years in advertising</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">350M</div>
+        <div class="stat-label">Users reached via Airtel campaign</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">Silver</div>
+        <div class="stat-label">FAB Award London — Horlicks Fearless Songs</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">22</div>
+        <div class="stat-label">Languages. One campaign. Airtel.</div>
+      </div>
+    </div>
+
+    <div class="hero-credentials">
+      <div class="credential-row">
+        <span class="credential-year">2025</span>
+        <span class="credential-text"><strong>MA Advertising</strong> — University of the Arts London</span>
+      </div>
+      <div class="credential-row">
+        <span class="credential-year">2024</span>
+        <span class="credential-text">Industry collaboration — <strong>BBH UK &amp; Havas UK</strong></span>
+      </div>
+      <div class="credential-row">
+        <span class="credential-year">2019</span>
+        <span class="credential-text"><strong>Silver FAB Award London</strong> — Fearless Songs ft. A.R. Rahman</span>
+      </div>
+      <div class="credential-row">
+        <span class="credential-year">2012–</span>
+        <span class="credential-text">Leo Burnett · FCB India · Ogilvy · Enormous</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── WORK ─── -->
+<div id="work">
+  <div class="section-header">
+    <span class="section-number">01</span>
+    <h2 class="section-title">Selected<br>Work</h2>
+    <p class="section-subtitle">Campaigns built on tension, not trends. Ideas that had a reason to exist.</p>
+  </div>
+
+  <div class="work-grid">
+
+    <!-- HERO CARD: British Army -->
+    <div class="work-card hero-card reveal visible">
+      <div class="work-card-inner">
+        <div>
+          <p class="work-card-tag">Speculative · Digital &amp; OOH · UK</p>
+          <h3 class="work-card-client">British Army</h3>
+          <p class="work-card-title">Erase Your Past</p>
+          <p class="work-card-summary">58,300 children are created for mostly offences between 2020–2021. The Army doesn't ask who you were. Just what you could become. A recruitment campaign built on the transformative power of a clean slate — targeted at young people with criminal records who the system had written off.</p>
+          <div class="work-card-meta">
+            <span class="work-meta-item">Digital</span>
+            <span class="work-meta-item">OOH</span>
+            <span class="work-meta-item">Social</span>
+            <span class="work-meta-item">Speculative</span>
+          </div>
+        </div>
+        <div class="hero-card-right">
+          <div>
+            <div class="hero-card-stat">58,300</div>
+            <div class="hero-card-stat-label">children created for mostly offences each year in England &amp; Wales. Every one of them a potential recruit.</div>
+          </div>
+          <div class="hero-card-process">
+            <div class="process-step">
+              <span class="process-label">Problem</span>
+              <span class="process-text">Youth offending is rising. The Army struggles to recruit from communities the system has abandoned.</span>
+            </div>
+            <div class="process-step">
+              <span class="process-label">Insight</span>
+              <span class="process-text">A criminal record doesn't define capacity for discipline, courage, or service. The Army already knows this. Society doesn't.</span>
+            </div>
+            <div class="process-step">
+              <span class="process-label">Idea</span>
+              <span class="process-text">An eraser. The most loaded object in British schools. Used to undo mistakes — or to rub out a future. We made it stand for something else entirely.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BMW -->
+    <div class="work-card reveal">
+      <div class="work-card-inner">
+        <p class="work-card-tag">Ambient · Sustainability · India</p>
+        <h3 class="work-card-client">BMW</h3>
+        <p class="work-card-title">The Planet Saving Billboard</p>
+        <p class="work-card-summary">India generates $6 billion of automotive scrap annually. We built an outdoor billboard from 100% recycled BMW parts — engines, tyres, sheet metal — turning the pollution problem into a 32-foot proof of purpose. Zero new materials. One unmissable idea.</p>
+        <div class="work-card-meta">
+          <span class="work-meta-item">Ambient</span>
+          <span class="work-meta-item">OOH</span>
+          <span class="work-meta-item">Sustainability</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- POND'S -->
+    <div class="work-card reveal">
+      <div class="work-card-inner">
+        <p class="work-card-tag">Ambient · Innovation · Beauty</p>
+        <h3 class="work-card-client">Pond's</h3>
+        <p class="work-card-title">The Sun-Damaged Ad</p>
+        <p class="work-card-summary">Most Indian women attribute dark patches to hormones, not UV exposure. We created a billboard printed in photochromic ink — invisible at night, then visibly scarred by actual sunlight each day. The ad got the damage. The pack provided the solution. Seeing became believing.</p>
+        <div class="work-card-meta">
+          <span class="work-meta-item">Ambient</span>
+          <span class="work-meta-item">OOH</span>
+          <span class="work-meta-item">Skincare</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- McCAIN -->
+    <div class="work-card reveal">
+      <div class="work-card-inner">
+        <p class="work-card-tag">Experiential · Retail · FMCG</p>
+        <h3 class="work-card-client">McCain</h3>
+        <p class="work-card-title">Wake Up and Smell the Fries</p>
+        <p class="work-card-summary">Indians avoid frozen food aisles — a cultural suspicion that frozen means inferior. Instead of arguing the point, we bypassed cognition entirely. Aroma diffusers releasing hot-chip scent were placed at hypermarket entrances, triggering the hunger response before a single rational thought could interfere.</p>
+        <div class="work-card-meta">
+          <span class="work-meta-item">Experiential</span>
+          <span class="work-meta-item">Retail</span>
+          <span class="work-meta-item">Sensory</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- HORLICKS -->
+    <div class="work-card reveal">
+      <div class="work-card-inner">
+        <p class="work-card-tag">Integrated · Award-Winning · FMCG</p>
+        <h3 class="work-card-client">Horlicks</h3>
+        <p class="work-card-title">Fearless Songs</p>
+        <p class="work-card-summary">Women's Horlicks needed to move from maternal health supplement to a brand women actively chose for themselves. We reframed the product entirely — and contributed to an integrated campaign featuring A.R. Rahman, India's most iconic composer, that drove significant purchase intent uplift and won Silver at FAB Awards London.</p>
+        <div class="work-card-meta">
+          <span class="work-meta-item">TV</span>
+          <span class="work-meta-item">Digital</span>
+          <span class="work-meta-item">Integrated</span>
+        </div>
+        <div class="work-card-award">Silver — FAB Awards London 2019</div>
+      </div>
+    </div>
+
+    <!-- ABBOTT -->
+    <div class="work-card reveal">
+      <div class="work-card-inner">
+        <p class="work-card-tag">Healthcare · Print &amp; Digital · Pharma</p>
+        <h3 class="work-card-client">Abbott</h3>
+        <p class="work-card-title">Life to the Fullest</p>
+        <p class="work-card-summary">A pharmaceutical brand that needed to speak to patients, not just doctors. We wrote across a full brand platform — 'Life to the Fullest' — reframing Abbott's role from treatment provider to life enabler. Campaign ran across print, digital and physician comms.</p>
+        <div class="work-card-meta">
+          <span class="work-meta-item">Healthcare</span>
+          <span class="work-meta-item">Print</span>
+          <span class="work-meta-item">Digital</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- HUL PROJECT SUNLIGHT -->
+    <div class="work-card reveal">
+      <div class="work-card-inner">
+        <p class="work-card-tag">Purpose · Social Impact · FMCG</p>
+        <h3 class="work-card-client">Hindustan Unilever</h3>
+        <p class="work-card-title">Project Sunlight — Follow New Leaders</p>
+        <p class="work-card-summary">A corporate social responsibility platform at genuine scale. Writing for a Unilever initiative that moved sanitation, hygiene and social equity from obligation to aspiration — across Lifebuoy, Pureit, and the master Sunlight brand. Purpose-driven copy that had to earn its place, not just assert it.</p>
+        <div class="work-card-meta">
+          <span class="work-meta-item">Purpose</span>
+          <span class="work-meta-item">Print</span>
+          <span class="work-meta-item">Corporate</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ─── TV REEL ─── -->
+<section class="reel-section" id="reel">
+  <div class="reel-intro">
+    <h2 class="reel-heading reveal">TV &amp;<br>Film</h2>
+    <p class="reel-note reveal">Broadcast work spanning FMCG, telecom, healthcare and food — across 22 Indian languages.</p>
+  </div>
+  <div class="reel-grid">
+    <div class="reel-item reveal" style="background: #1a1410;">
+      <div class="reel-client">Horlicks</div>
+      <div class="reel-spot">Fearless Songs · Silver FAB London</div>
+    </div>
+    <div class="reel-item reveal" style="background: #0a1520;">
+      <div class="reel-client">Airtel</div>
+      <div class="reel-spot">The Elbow Strike · 350M users · 22 languages</div>
+    </div>
+    <div class="reel-item reveal" style="background: #14100a;">
+      <div class="reel-client">Cornetto</div>
+      <div class="reel-spot">Brand TVC · Youth</div>
+    </div>
+    <div class="reel-item reveal" style="background: #0f1a0a;">
+      <div class="reel-client">Horlicks Plus</div>
+      <div class="reel-spot">The Better Protein</div>
+    </div>
+    <div class="reel-item reveal" style="background: #1a0f0a;">
+      <div class="reel-client">Airtel Bengal</div>
+      <div class="reel-spot">Regional · Festive campaign</div>
+    </div>
+    <div class="reel-item reveal" style="background: #14141a;">
+      <div class="reel-client">YOGR India</div>
+      <div class="reel-spot">D2C health brand · TVC</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── AWARDS ─── -->
+<section class="awards-section" id="awards">
+  <div class="section-header" style="padding: 0 0 3rem;">
+    <span class="section-number">02</span>
+    <h2 class="section-title">Recognition</h2>
+  </div>
+  <div class="awards-grid">
+    <div class="award-item reveal">
+      <div class="award-medal">Silver</div>
+      <div class="award-name">FAB Awards London</div>
+      <div class="award-campaign">Horlicks Fearless Songs ft. A.R. Rahman</div>
+      <div class="award-year">2019</div>
+    </div>
+    <div class="award-item reveal">
+      <div class="award-medal">MA</div>
+      <div class="award-name">University of the Arts London</div>
+      <div class="award-campaign">Advertising — with industry collaborations at BBH UK &amp; Havas UK</div>
+      <div class="award-year">2024–25</div>
+    </div>
+    <div class="award-item reveal">
+      <div class="award-medal">↑3x</div>
+      <div class="award-name">Purchase Intent Uplift</div>
+      <div class="award-campaign">Women's Horlicks repositioning campaign</div>
+      <div class="award-year">2018</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PURPOSE TRACK ─── -->
+<section class="purpose-section" id="purpose">
+  <div class="purpose-header">
+    <h2 class="purpose-title reveal">Work that<br>earns its<br><em>existence.</em></h2>
+    <p class="purpose-intro reveal">Advertising that claims purpose without earning it is the worst kind of noise. The work below starts with a real problem and refuses to let the idea off the hook. This is what I do for charities, NGOs, and purpose-first brands.</p>
+  </div>
+  <div class="purpose-cards">
+    <div class="purpose-card reveal">
+      <p class="purpose-card-tag">Speculative · Charity Sector</p>
+      <h3 class="purpose-card-title">Trussell Trust</h3>
+      <p class="purpose-card-desc">A 60-second film exploring hunger, dignity and community through Martin — an older man who finds unexpected connection through food bank volunteering. Ken Loach aesthetic. Uncomfortable truths. No charity clichés. Full storyboard available.</p>
+    </div>
+    <div class="purpose-card reveal">
+      <p class="purpose-card-tag">Speculative · UK Market · Defence</p>
+      <h3 class="purpose-card-title">British Army</h3>
+      <p class="purpose-card-desc">Erase Your Past — a digital and OOH recruitment campaign targeting young people with criminal records. The eraser as metaphor. The Army as second chance. Developed as a Wieden+Kennedy-style brief during MA work.</p>
+    </div>
+    <div class="purpose-card reveal">
+      <p class="purpose-card-tag">Client Work · Social Impact</p>
+      <h3 class="purpose-card-title">HUL Project Sunlight</h3>
+      <p class="purpose-card-desc">Writing for a Unilever CSR platform at scale — connecting sanitation, hygiene and equity to real human aspiration. Full newspaper spread campaign and digital activation.</p>
+    </div>
+    <div class="purpose-card reveal">
+      <p class="purpose-card-tag">AI &amp; Strategy · MA Research</p>
+      <h3 class="purpose-card-title">AI in Creative Practice</h3>
+      <p class="purpose-card-desc">MA thesis research using AI-powered persona modelling and synthetic data to map London Underground consumer behaviour. Expertise in prompt engineering, agentic AI systems, and AI-assisted creative strategy.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── ABOUT ─── -->
+<section class="about-section" id="about">
+  <div class="about-left">
+    <p class="about-label">Background</p>
+    <h2 class="about-heading">12 years.<br><em>Two</em> markets.<br>One voice.</h2>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <span class="timeline-year">2024–25</span>
+        <div class="timeline-content">
+          <div class="timeline-role">MA Advertising</div>
+          <div class="timeline-agency">University of the Arts London · BBH UK · Havas UK</div>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <span class="timeline-year">2022–24</span>
+        <div class="timeline-content">
+          <div class="timeline-role">Senior Copywriter</div>
+          <div class="timeline-agency">Gozoop Group · Enormous Brands</div>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <span class="timeline-year">2018–22</span>
+        <div class="timeline-content">
+          <div class="timeline-role">Copywriter / Senior Writer</div>
+          <div class="timeline-agency">Ogilvy India</div>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <span class="timeline-year">2015–18</span>
+        <div class="timeline-content">
+          <div class="timeline-role">Copywriter</div>
+          <div class="timeline-agency">FCB India</div>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <span class="timeline-year">2012–15</span>
+        <div class="timeline-content">
+          <div class="timeline-role">Junior Copywriter</div>
+          <div class="timeline-agency">Leo Burnett India</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-right">
+    <p class="about-bio-large reveal">I started at Leo Burnett. I ended up at UAL. <em>Everything in between</em> was the education.</p>
+    <p class="about-bio reveal">I've written for Airtel's 350 million users in 22 languages. I've sat in rooms at BBH and Havas. I've made a billboard from scrap metal and a cinema spot with A.R. Rahman. What connects all of it is the same thing: a refusal to let a brief stay the way it arrived.</p>
+    <p class="about-bio reveal">I'm a senior copywriter now based in London, looking for work at agencies and organisations where the brief actually matters — and where good writing is still considered a superpower, not a prompt.</p>
+    <div class="skills-list reveal">
+      <span class="skill-tag">Brand Copywriting</span>
+      <span class="skill-tag">TV &amp; Film Scripts</span>
+      <span class="skill-tag">OOH &amp; Ambient</span>
+      <span class="skill-tag">Social &amp; Digital</span>
+      <span class="skill-tag">Integrated Campaigns</span>
+      <span class="skill-tag">Brand Strategy</span>
+      <span class="skill-tag">Purpose-Led Comms</span>
+      <span class="skill-tag">AI in Creative Practice</span>
+      <span class="skill-tag">Healthcare Advertising</span>
+      <span class="skill-tag">Charity &amp; NGO</span>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CONTACT ─── -->
+<section class="contact-section" id="contact">
+  <div>
+    <h2 class="contact-heading reveal">Let's make<br>something<br><em>worth making.</em></h2>
+    <p class="contact-note reveal">Available for senior copywriter roles, contract work, and creative collaborations in London and beyond. Open to agency, brand-side, and purpose-driven organisations.</p>
+    <a href="mailto:ushna@email.com" class="btn-primary reveal">Send an Email</a>
+  </div>
+  <div class="contact-links reveal">
+    <a href="mailto:ushna@email.com" class="contact-link">
+      <span class="contact-link-label">Email</span>
+      <span class="contact-link-value">ushna@email.com</span>
+      <span class="contact-arrow">→</span>
+    </a>
+    <a href="https://linkedin.com/in/ushna" class="contact-link">
+      <span class="contact-link-label">LinkedIn</span>
+      <span class="contact-link-value">linkedin.com/in/ushna</span>
+      <span class="contact-arrow">→</span>
+    </a>
+    <a href="https://www.behance.net/ushnachowdhuri" class="contact-link">
+      <span class="contact-link-label">Behance</span>
+      <span class="contact-link-value">behance.net/ushnachowdhuri</span>
+      <span class="contact-arrow">→</span>
+    </a>
+    <a href="file:///Users/ushnachowdhuri/Downloads/ushna-portfolio.html#" class="contact-link">
+      <span class="contact-link-label">CV</span>
+      <span class="contact-link-value">Download PDF</span>
+      <span class="contact-arrow">↓</span>
+    </a>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <span class="footer-name">Ushna Chowdhuri</span>
+  <span class="footer-note">Senior Creative Copywriter · London · © 2026</span>
+</footer>
+
+<script>
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.add('visible');
+        }, (i % 4) * 80);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+  reveals.forEach(el => observer.observe(el));
+
+  // Nav background on scroll
+  const nav = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    nav.style.boxShadow = window.scrollY > 20 ? '0 1px 20px rgba(0,0,0,0.06)' : 'none';
+  });
+</script>
+
+
+
+</body></html>
